@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="6dip"
+     >
+
+<!-- TextView 3 is for the Due date section header -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Section Date" 
+        android:textSize="25sp"
+        android:focusable="false"/>
+
+<!-- TextView 1 is for the task title -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgBtnPriority"
+        android:layout_marginLeft="5dp"
+        android:focusable="false"
+        android:layout_alignBottom="@id/imgBtnPriority"
+        android:text="Task Title"
+        android:textSize="19dp" />
+
+
+<!-- TextView 2 is for the due date -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:text="Task DATES"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@id/imgBtnPriority"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textView3"
+        android:src="@drawable/rect_imp"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_marginTop="5dp"
+        android:focusable="false" />
+
+</RelativeLayout>
